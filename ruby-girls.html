@@ -513,36 +513,7 @@
           <pre>=> "toboryburhtiwgnidoc"</pre>
         </section>
       </article>
-      
-      <article>
-        <h3>Modifying the value with a method</h3>
-        <section class='build'>
-          <pre>> llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
-          <p>Try asking for the value of llc now.</p>
-          <pre>> llc</pre><pre>=> "ladieslearningcode"</pre>
-        </section>
-      </article>
-      
-      <article id='wait-why'>
-        <style>
-          #wait-why p { margin: 50px 0px; }
-        </style>
-        <h3>Wait. Why didn't it change?</h3>
-        <section class='build'>
-          <p class='large-font'>llc is still pointing to "ladieslearningcode". You didn't tell it to point to a different string.</p>
-          <div>llc <img src='images/arrow.png'> "ladieslearningcode"</div>
-          <p class='large-font'>If you want the value to change, you have to set it to something else.</p>
-        </section>
-      </article>
-      
-      <article>
-        <section class='build'>
-          <pre>> llc = llc.reverse</pre><pre>=> "edocgninraelseidal"</pre>
-          <pre>> llc</pre><pre>=> "edocgninraelseidal"</pre>
-          <p class='large-font'>If you want the value of a variable to change, you have to explicitly tell it to change.</p>
-        </section>
-      </article>
-      
+            
       <article>
         <h3>
           Let's Try One More
@@ -560,8 +531,8 @@
       <article>
         <h3>Doing like Twitter does.</h3>
         <section class='build'>
-          <pre>> tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"</pre>
-          <pre>=> "I'm writing my first program at the @llcodedotcom <br>Intro to Ruby workshop!"</pre>
+          <pre>> tweet = "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
+          <pre>=> "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
           <pre>> tweet.length</pre>
           <pre>=> 73</pre>
           <p class='large-font'>We now know enough to write a program.</p>
@@ -573,10 +544,10 @@
           Writing Our First Program
         </h3>
         <p>
-          Open any text editor, add the same code, and save it as twitter.rb in your llc directory.
+          Open TextMate, add the same code, and save it as twitter.rb in your ruby-girls directory.
         </p>
         <section>
-          <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>tweet.length</pre>
+          <pre>tweet = "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"<br>tweet.length</pre>
         </section>
         <p>To run your program, type <b>quit</b> to exit from IRB, and then type:</p>
         <section>
@@ -651,7 +622,7 @@
         <p>The gets method warns Ruby that you're about to speak.</p>
         <section class='build'>
           <pre>> tweet = gets</pre>
-          <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre><pre>=> "I'm learning Ruby with #ladieslearningcode\n"</pre>
+          <pre class='all-string'>I'm learning Ruby with Ruby Robot</pre><pre>=> "I'm learning Ruby with Ruby Robot\n"</pre>
           <p>
             Wait, we didn't type \n in our tweet. What is that?
           </p>
@@ -663,13 +634,13 @@
           Asking for Input
         </h3>
         <p>
-          The \n is there because you hit the enter button after you typed your tweet. It represents a new line, and counts as exactly one character.
+          The \n is there because you hit the enter button after you typed your tweet.
           To get rid of it, do this:
         </p>
         <section class='build'>
           <pre>> tweet = gets.chomp</pre>
-          <pre class='all-string'>I'm learning Ruby with #ladieslearningcode</pre>
-          <pre>=> "I'm learning Ruby with #ladieslearningcode"</pre>
+          <pre class='all-string'>I'm learning Ruby with Ruby Robot</pre>
+          <pre>=> "I'm learning Ruby with Ruby Robot"</pre>
         </section>
       </article>
       
@@ -680,10 +651,10 @@
         <p>Now try this:</p>
         <section class='build'>
           <pre>> tweet = gets.chomp</pre>
-          <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode</pre>
-          <pre>=> "I'm a lady learning code with @llcodedotcom #ladieslearningcode"</pre>
+          <pre class='all-string'>I'm learning Ruby with Ruby Robot</pre>
+          <pre>=> "I'm learning Ruby with Ruby Robot"</pre>
           <pre>> puts tweet</pre>
-          <pre class='all-string'>I'm a lady learning code with @llcodedotcom #ladieslearningcode<br>=> nil</pre>
+          <pre class='all-string'>I'm learning Ruby with Ruby Robot<br>=> nil</pre>
         </section>
       </article>
       
@@ -692,12 +663,12 @@
           #nil-nothing p { margin: 80px 0px; }
         </style>
         <h3>What's nil? It's nothing, don't worry.</h3>
-        <p>You asked Ruby to output your tweet, and Ruby did just that.</p>
+        <p>You asked Ruby to give you your tweet, and Ruby did just that.</p>
         <p>
           Remember that in IRB, Ruby always responds to your message.
           This time, it gave the output, and had nothing else to say, so it returned nil. 
         </p>
-        <p>nil is also an Object, and it just represents nothing.</p>
+        <p>Nothing to worry about.</p>
       </article>
 
       <article id='ask-for-tweet'>
@@ -707,10 +678,10 @@
         <h3>
           Back to your Twitter Program
         </h3>
-        <p>Working with your group, modify your Twitter program to do the following:</p>
+        <p>Working with your buddy, change your Twitter program like this:</p>
         <div class='build'>
           <p>1. Ask (politely!) for a tweet from the user.</p>
-          <p>2. Store the tweet in a variable, without \n</p>
+          <p>2. Save it with a sticky note with "tweet" on it, without the \n.</p>
           <p>3. Output the tweet the user gave.</p>
           <p>4. Output the number of characters in the tweet.</p>
           <p>5. Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
