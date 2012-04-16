@@ -78,7 +78,7 @@ body {
   background-color: white;
 
   box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
-  border: 3px solid #B1009A;
+  border: 3px solid #009999;
 
   transition: transform .3s ease-out;
   -o-transition: -o-transform .3s ease-out;
@@ -659,7 +659,7 @@ article.smaller q::after {
   display: block;
   overflow: hidden;
   background: white;
-  border-top: 15px #B1009A solid;
+  border-top: 15px #009999 solid;
 }
 
 .large-font {
@@ -668,7 +668,7 @@ article.smaller q::after {
 }
 
 .keyword {
-  font-color: #B1009A;
+  font-color: #009999;
   display: inline;
 }
 

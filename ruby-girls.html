@@ -17,18 +17,12 @@
 <html>
   <head>
     <title>Ladies Learning Ruby</title>
-
     <meta charset='utf-8'>
     <script src='default.js'></script>
   </head>
   
-  <style>
-  </style>
-
   <body style='display: none'>
-
     <section class='slides layout-regular template-default'>
-      <img src='images/ladieslearningcode-125x125.gif'>
       <article>
         <h1>
           Learning to Program
@@ -41,7 +35,7 @@
           @dess_e
         </p>
       </article>
-
+      
       <article id="what-is-ruby">
         <style>
           #what-is-ruby p { margin: 100px 0px; font-size: 40px; line-height: 50px; };
@@ -76,7 +70,7 @@
         <p />
         <img src="images/machine-language.jpg" width="600" height="411" border="1">
       </article>
-
+      
       <article id='middle-ground'>
         <h3>
           This is where a programming language comes in.
@@ -84,25 +78,27 @@
         <style>
           #middle-ground p { margin-top: 100px }
         </style>
-        <p>A programming language is a language that is relatively <b>easy for you to learn</b>, but can also be <b>understood by the computer</b>.</p>
-        <p>It's the <b>middle ground</b> between English and the language that the computer understands.</p>
+        <p>A programming language is <b>easy for you to learn</b>, and <b>your computer also understands it</b>.</p>
+        <p>It's the <b>half-way point</b> between English and the language that your computer speaks.</p>
       </article>
       
       <article id='stupid-computer'>
         <style>
-          #stupid-computer p { margin: 200px 0px; }
+          #stupid-computer p { margin: 100px 0px; }
         </style>
         <h3>
           2. Your computer is not very smart.
         </h3>
-        <p class='large-font'>Your computer can only do what you tell it to if you give it exact instructions.</p>
+        <p class='large-font'>Your computer can only do what you tell it to if you give it step-by-step instructions.</p>
       </article>
       
       <article id='stupid-computer'>
         <h3>People vs. Computers</h3>
         <p class='large-font'>
-          Suppose you had to teach a person how to make a peanut butter sandwich.
-          You might give the person an easy to follow recipe.
+          Imaging you have to teach a friend to make a peanut butter sandwich.
+        </p>
+        <p class='large-font'>
+          What would you tell your friend?
         </p>
       </article>
       
@@ -148,7 +144,7 @@
         <p>How do I use a toaster?</p>
         <p>etc, etc, etc</p>
       </article>
-
+      
       <article>
         <h3>2. Spread peanut butter on one slice of bread</h3>
         <p>What is peanut butter?</p>
@@ -160,83 +156,17 @@
         <p>How much peanut butter do I spread?</p>
         <p>etc, etc, etc</p>
       </article>
-
-      <article id='programming-languages'>
-        <style>
-          #programming-languages p { margin-top: 80px; }
-          #programming-languages .mixed-font { line-height: 50px; }
-          #programming-languages b { font-size: 40px; }
-        </style>
-        <h3>Back to programming languages.</h3>
-        <p>A programming language makes it easier for you to give the computer instructions.</p>
-        <p class='mixed-font'>
-          It's made up of <b>simple elements</b>, that when <b>combined together</b>, 
-          are used to write a set of <b>instructions</b> that the computer then breaks down and interprets as its own language.
-        </p>
-      </article>
-
+      
       <article id='learned-programming'>
         <style>
           #learned-programming p { margin-top: 100px; }
         </style>
         <h3>
-          You've just learned what programming is!
+          You've learned what programming is!
         </h3>
-        <p class='large-font'>Programming is writing out <b>exact instructions</b> that your computer can follow to do things.</p>
+        <p class='large-font'>Programming is writing out <b>step-by-step instructions</b> to speak to your computer.</p>
       </article>
       
-      <article id='ruby-rocks'>
-        <style>
-          #ruby-rocks .large-font { margin: 50px; }
-        </style>
-        <h3>
-          Why Ruby Rocks!
-        </h3>
-        <p>Created in 1993 by Yukihiro Matsumoto, from Japan.</p>
-        <p class='large-font'> 
-          "I hope to see Ruby help every programmer in the world to be productive, and to enjoy programming, and to be happy. 
-          That is the primary purpose of the Ruby language."
-        </p>
-        <p>Ruby is <b>fun</b>, it's <b>easy to learn</b>, and the <b>syntax is very forgiving</b>.</p>
-      </article>
-      
-      <article>
-        <p class='large-font'>This is some code in Java:</p>
-        <section>
-          <pre>
-class Person {
-  private String name, int age;
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  public String getName() {
-    return name;
-  }
-
-  public void setAge(int age) {
-    this.age = age;
-  }
-
-  public String getAge() {
-    return age;
-  }
-}</pre>
-        </section>
-      </article>
-      
-      <article>
-        <p class='large-font'>The equivalent code in Ruby looks like this:</p>
-        <section>
-          <pre>
-class Person
-  attr_accessor :name, :age
-end
-          </pre>
-        </section>
-      </article>
-
       <article id='ruby-robot'>
         <style>
           #ruby-robot img { margin: 50px 0 0 450px; }
@@ -246,7 +176,17 @@ end
         </h3>
         <img src="images/robot.png">
       </article>
-
+      
+      <article id='ruby-robot-world'>
+        <style>
+        
+        </style>
+        <h3>
+          Ruby Robot Lives in a Different World
+        </h3>
+        
+      </article>
+      
       <article id='irb-intro'>
         <style>
           #irb-intro .instructions { margin-top: 100px; }
