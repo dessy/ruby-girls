@@ -331,53 +331,7 @@
         <p>Scans the instruction sheet for <b>+</b>.</p>
         <p>Sees that when you ask for an <b>INTEGER + INTEGER</b>, you want it to add the two together.</p>
       </article>
-
-      <article>
-        <h3>City</h3>
-        <div class='class-diagram'>
-          <img src="images/toronto.png">
-          <img src="images/london.jpg">
-          <br>
-          <img src="images/new-york.jpg">
-          <img src="images/paris.jpg">
-        </div>
-      </article>
-
-      <article id='city-instance'>
-        <style>
-          #city-instance p { margin: 70px 0px; }
-        </style>
-        <div class='build'>
-          <p class='large-font'>Toronto is an instance of the class City.</p>
-          <p class='large-font'>London is an instance of the class City.</p>
-          <p class='large-font'>New York is an instance of the class City.</p>
-          <p class='large-font'>Paris is an instance of the class City.</p>
-        </div>
-      </article>
-
-      <article id='string-class'>
-        <style>
-          #string-class div { padding: 20px; }
-        </style>
-        <h3>String</h3>
-        <div class='class-diagram'>
-          "ladies"<br><br>
-          "ladieslearningcode"<br><br>
-          "The dog jumped over the fence."
-        </div>
-      </article>
       
-      <article id='string-instance'>
-        <style>
-          #string-instance p { margin: 70px 0px; }
-        </style>
-        <div class='build'>
-          <p class='large-font'>"ladies" is an instance of the class String.</p>
-          <p class='large-font'>"ladieslearningcode" is an instance of the class String.</p>
-          <p class='large-font'>"The dog jumped over the fence." is an instance of the class String.</p>
-        </div>
-      </article>
-
       <article>
         <h3>
           Playing with Integers
@@ -385,31 +339,53 @@
         <section class='build'>
           <pre>> 99.next</pre>
           <pre>=> 100</pre>
-
+          
           <pre>> 99.odd?</pre>
           <pre>=> true</pre>
           
           <pre>> 99.even?</pre>
           <pre>=> false</pre>
-        </section>        
-      </article>
-
-      <article>
-        <h3>
-          Simple String Manipulation
-        </h3>
-        <section class='build'>
-          <pre>> "ladieslearningcode".capitalize</pre>
-          <pre>=> "Ladieslearningcode"</pre>
-
-          <pre>> "ladieslearningcode".upcase</pre>
-          <pre>=> "LADIESLEARNINGCODE"</pre>
-
-          <pre>> "ladieslearningcode".reverse</pre>
-          <pre>=> "edocgninraelseidal"</pre>          
         </section>
       </article>
-
+      
+      <article id='integer-fun'>
+        <style>
+          #integer-fun .large-font { margin-top: 175px; }
+          #integer-fun b { color: #006363; }
+        </style>
+        <h3>
+          More Fun With Integers
+        </h3>
+        <p class='large-font'>Find your <b>Integer</b> sheet, and try playing with each of the instructions.</p>
+      </article>
+      
+      <article>
+        <h3>
+          Playing with Strings
+        </h3>
+        <section class='build'>
+          <pre>> "codingwithrubyrobot".capitalize</pre>
+          <pre>=> "Codingwithrubyrobot"</pre>
+          
+          <pre>> "codingwithrubyrobot".upcase</pre>
+          <pre>=> "CODINGWITHRUBYROBOT"</pre>
+          
+          <pre>> "codingwithrubyrobot".reverse</pre>
+          <pre>=> "toboryburhtiwgnidoc"</pre>
+        </section>
+      </article>
+      
+      <article id='string-fun'>
+        <style>
+          #string-fun .large-font { margin-top: 175px; }
+          #string-fun b { color: #006363; }
+        </style>
+        <h3>
+          More Fun With Strings
+        </h3>
+        <p class='large-font'>Find your <b>String</b> sheet, and try playing with each of the instructions.</p>
+      </article>
+      
       <article id='ruby-method'>
         <style>
           #ruby-method .large-font { margin: 60px 0px; }
@@ -431,49 +407,65 @@
         <p class='large-font'>Classes come packaged with methods.</p>
       </article>
       
-      <article>
+      <article id='back-instructions'>
+        <style>
+          #back-instructions .large-font { margin: 80px 0 50px 0; }
+          #back-instructions b { color: #006363; }
+        </style>
+        <h3>
+          Back to Ruby Robot's Instruction Book
+        </h3>
+        <p class='large-font'>Each page in Ruby Robot's instruction book tell Ruby what it can do with a type of Object (a Class).</p>
+        <p class='large-font'>The <b>things it can do</b> are the <b>methods</b>, and they're found on each page of the book.</p>
+      </article>
+      
+      <article id='lazy'>
+        <style>
+          #lazy .large-font { margin: 75px 0; }
+          #lazy b { color: #006363; }
+        </style>
         <h3>
           I'm lazy! I don't want to do all of this typing!
         </h3>
-        <p>What if we could type in "ladieslearningcode" just once, and store it for later use? We can!</p>
+        <p class='large-font'>What if we could type in <b>"codingwithrubyrobot"</b> only once? We can!</p>
         <section>
-          <pre>> llc = "ladieslearningcode"</pre>
-          <pre>=> "ladieslearningcode"</pre></section>
-        <p>You've just <b>assigned</b> the String "ladieslearningcode to the <b>variable</b> llc.</p>
-        <p>A programmer would say that the variable llc points to the object "ladieslearningcode".</p>
+          <pre>> crr = "codingwithrubyrobot"</pre>
+          <pre>=> "codingwithrubyrobot"</pre></section>
+        <p class='large-font'><b>crr</b> is called a variable.</p>
       </article>
       
       <article id='back-ruby-robot'>
         <style>
           #back-ruby-robot .large-font { margin: 80px 0 50px 0; }
+          #back-ruby-robot b { color: #006363; }
         </style>
         <h3>
           Back to Ruby Robot
         </h3>
-        <p class='large-font'>You gave Ruby Robot the string "<b>ladieslearningcode</b>", and asked it to put a sticky note with "<b>llc</b>" on that string.</p>
-        <p class='large-font'>Now, when you ask for "llc", Ruby Robot will know where to find your string, because it has labelled it.</p>
+        <p class='large-font'>You gave Ruby Robot the string <b>"codingwithrubyrobot"</b>, and asked it to put a sticky note with <b>"crr"</b> on that string.</p>
+        <p class='large-font'>Now, when you ask for <b>"crr"</b>, Ruby Robot will know where to find your string, because it has labelled it.</p>
       </article>
       
       <article>
         <h3>
           Variables Can (And Often Do!) Vary
         </h3>
-        <p>A variable is called just that because the object it points to can change.</p>
+        <p>A variable is called just that because the object it can change.</p>
         <section class='build'>
-          <pre>> llc = "a lady learning code"</pre><pre>=> "a lady learning code"</pre>
-          <div>llc <img src='images/arrow.png'> "a lady learning code"</div>
-          <p>Now let's ask for the value of llc.</p>
-          <pre>> llc</pre><pre>=> "a lady learning code"</pre>
+          <pre>> crr = "learning to code with ruby robot"</pre><pre>=> "learning to code with ruby robot"</pre>
+          <div>crr <img src='images/arrow.png'> "learning to code with ruby robot"</div>
+          <p>Now let's ask for crr.</p>
+          <pre>> crr</pre><pre>=> "learning to code with ruby robot"</pre>
         </section>
       </article>
       
       <article>
         <p>Let's try some more</p>
         <section class='build'>
-          <pre>> llc = 99</pre><pre>=> 99</pre>
-          <div>llc <img src='images/arrow.png'> 99</div>
-          <p>Let's ask for the value of llc once again.</p>
-          <pre>> llc</pre><pre>=> 99</pre>
+          <pre>> crr = 99</pre><pre>=> 99</pre>
+          <div>crr <img src='images/arrow.png'> 99</div>
+          <p>Let's ask for crr once again.</p>
+          <pre>> crr</pre><pre>=> 99</pre>
         </section>
       </article>
       
@@ -481,35 +473,44 @@
         <h3>The More the Merrier</h3>
         <p>Let's introduce another variable.</p>
         <section class='build'>
-          <pre>> copy_cat = llc</pre><pre>=> 99</pre>
-          <div>llc <img src='images/arrow.png'> 99 <img src='images/back-arrow.png'> copy_cat</div>
+          <pre>> copy_cat = crr</pre><pre>=> 99</pre>
+          <div>crr <img src='images/arrow.png'> 99 <img src='images/back-arrow.png'> copy_cat</div>
         </section>
       </article>
-
+      
       <article>
-        <p>Let's ask for the value of each variable.</p>
+        <h3>Let's ask for each variable</h3>
         <section class='build'>
-          <pre>> llc</pre><pre>=> 99</pre>
+          <pre>> crr</pre><pre>=> 99</pre>
           <pre>> copy_cat</pre><pre>=> 99</pre>
-          <p>Now set llc back to "ladieslearningcode"</p>
-          <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
+        </section>
+      </article>
+      
+      <article id='variable-reset'>
+        <style>
+          #variable-reset .large-font { margin: 100px 0; }
+        </style>
+        <h3>Resetting the variable</h3>
+        <p class='large-font'>Now set crr back to "codingwithrubyrobot"</p>
+        <section class='build'>
+          <pre>> crr = "codingwithrubyrobot"</pre><pre>=> "codingwithrubyrobot"</pre>
         </section>
       </article>
       
       <article>
         <h3>
-          String Manipulation With Our Variable
+          Playing With Our Variable
         </h3>
-        <p>You can now use this variable exactly like you would have used "ladieslearningcode" before.</p>
+        <p>You can use this variable like you would have used "codingwithrubyrobot" before.</p>
         <section>
-          <pre>> llc.capitalize</pre>
-          <pre>=> "Ladieslearningcode"</pre>
-
-          <pre>> llc.upcase</pre>
-          <pre>=> "LADIESLEARNINGCODE"</pre>
-
-          <pre>> llc.reverse</pre>
-          <pre>=> "edocgninraelseidal"</pre>
+          <pre>> crr.capitalize</pre>
+          <pre>=> "Codingwithrubyrobot"</pre>
+          
+          <pre>> crr.upcase</pre>
+          <pre>=> "CODINGWITHRUBYROBOT"</pre>
+          
+          <pre>> crr.reverse</pre>
+          <pre>=> "toboryburhtiwgnidoc"</pre>
         </section>
       </article>
       
