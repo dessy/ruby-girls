@@ -179,6 +179,7 @@
       <article id='learned-programming'>
         <style>
           #learned-programming p { margin-top: 100px; }
+          #learned-programming b { font-size: 50px }
         </style>
         <h3>
           You've learned what programming is!
@@ -186,35 +187,21 @@
         <p class='large-font'>Programming is writing out <b>step-by-step instructions</b> to speak to your computer.</p>
       </article>
       
-      <article id='ruby-robot-world'>
-        <style>
-        
-        </style>
-        <h3>
-          Ruby Robot Lives in a Different World
-        </h3>
-        
-      </article>
-      
       <article id='irb-intro'>
         <style>
           #irb-intro .instructions { margin-top: 100px; }
         </style>
         <h3>
-          Time to see Ruby in action!
+          Time to see Ruby Robot in action!
         </h3>
-        <p>IRB is like text messaging with Ruby.</p>
-        <p>You'll ask Ruby to do something, and it will respond.</p>
+        <p>IRB is like text messaging with Ruby Robot.</p>
+        <p>You'll ask Ruby Robot to do something, and it will respond.</p>
         <div class='instructions'>
-          <p><b>OS X</b></p>
+          <p>Let's open Terminal:</p>
           <section>
             <pre>Applications -> Utilities -> Terminal</pre>
           </section>
           <p />
-          <p><b>Windows</b> (C:\windows\system32\cmd.exe)</p>
-          <section>
-            <pre>Start -> All Programs -> Accessories -> Command Prompt</pre>
-          </section>
         </div>
       </article>
       
@@ -224,8 +211,8 @@
         </style>
         <section class='build'>
           <pre>irb</pre>
-          <pre>ruby-1.9.2-p290 :001 > </pre>
-          <p class='large-font'>Let's ask Ruby to do something.</p>
+          <pre>ruby-1.8.7 :001 > </pre>
+          <p class='large-font'>Let's ask Ruby Robot to do something.</p>
         </section>
       </article>
       
@@ -235,22 +222,39 @@
           <pre>=> 2</pre>
           <pre>> 462 * 86</pre>
           <pre>=> 39732</pre>
-          <p class='large-font'>Ruby can do math, and it can do it much quicker than a person can.</p>
+          <p class='large-font'>Ruby can do math very quickly.</p>
         </section>
       </article>
-
+      
       <article id='ruby-knows'>
         <style>
           #ruby-knows .large-font { margin-top: 100px; }
         </style>
         <section class='build'>
           <pre>> 1 + 2 + 3<br>=> 6</pre>
-          <pre>> "ladies" + "learning" + "code"</pre>
-          <pre>=> "ladieslearningcode"</pre>
+          <pre>> "Coding" + "With" + "Ruby" + "Robot"</pre>
+          <pre>=> "CodingWithRubyRobot"</pre>
           <p class='large-font'>Ruby knows the difference between a number and a word.</p>
         </section>
       </article>
-
+      
+      <article id='ruby-robot-world'>
+        <style>
+          #ruby-robot-world p { margin: 30px 0px; }
+        </style>
+        <h3>
+          Ruby Robot Lives in a Different World
+        </h3>
+        <p class='large-font'>Just like in our world, there are many objects in Ruby Robot's world.</p>
+        <table>
+          <tr>
+            <td><p class='large-font'>Every object has a barcode.</p></td>
+            <td><img src="images/barcode.gif"></td>
+          </tr>
+        </table>
+        <p class='large-font'>Ruby Robot scans the barcode to find out what type of object it is.</p>
+      </article>
+      
       <article id='integer-string'>
         <style>
           #integer-string .ruby-class { margin: 100px 0px; }
@@ -262,7 +266,7 @@
         <p class='ruby-class'>Numbers without decimals are called <b>INTEGERS</b>. We just did some math with some integers.</p>
         <p class='ruby-class'>Letters, words, and sentences are called <b>STRINGS</b>. We tell Ruby that we are intending to use a string by wrapping it in quotes.</p>
       </article>
-
+      
       <article id='objects-objects'>
         <style>
           #objects-objects .large-font { margin: 150px 0px; }
