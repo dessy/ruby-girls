@@ -8,7 +8,8 @@ Feedback is more than welcome, and in fact very much appreciated!
 # Thanks
 
 A big thank you to Ladies Learning Code, for giving me a great reason to compile beginner Ruby content in the first place.
-This content is based heavily on the material I originally produced for the Ladies Learning Code {Intro to Ruby}[https://github.com/dessy/ladieslearningcode-ruby] workshop. 
+This content is based heavily on the material I originally produced for the 
+Ladies Learning Code [Intro to Ruby](https://github.com/dessy/ladieslearningcode-ruby) workshop.
 
 # License
 
