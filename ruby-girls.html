@@ -189,20 +189,17 @@
       
       <article id='irb-intro'>
         <style>
-          #irb-intro .instructions { margin-top: 100px; }
+          #irb-intro .large-font { font-size: 35px; margin: 50px 0 50px 0; }
         </style>
         <h3>
           Time to see Ruby Robot in action!
         </h3>
-        <p>IRB is like text messaging with Ruby Robot.</p>
-        <p>You'll ask Ruby Robot to do something, and it will respond.</p>
-        <div class='instructions'>
-          <p>Let's open Terminal:</p>
-          <section>
-            <pre>Applications -> Utilities -> Terminal</pre>
-          </section>
-          <p />
-        </div>
+        <section class='build'>
+          <p class='large-font'>You can speak to your computer through Terminal.</p>
+          <p class='large-font'>From Terminal, we'll ask our computer for IRB.</p>
+          <p class='large-font'>IRB is like text messaging with Ruby Robot.</p>
+          <p class='large-font'>You'll ask Ruby Robot to do something, and it will respond.</p>
+        </section>
       </article>
       
       <article id='ask-ruby'>
@@ -228,13 +225,14 @@
       
       <article id='ruby-knows'>
         <style>
-          #ruby-knows .large-font { margin-top: 100px; }
+          #ruby-knows .large-font { margin-top: 60px; }
         </style>
         <section class='build'>
           <pre>> 1 + 2 + 3<br>=> 6</pre>
-          <pre>> "Coding" + "With" + "Ruby" + "Robot"</pre>
-          <pre>=> "CodingWithRubyRobot"</pre>
-          <p class='large-font'>Ruby knows the difference between a number and a word.</p>
+          <pre>> "Girls" + "Crack" + "The" + "Code"</pre>
+          <pre>=> "GirlsCrackTheCode"</pre>
+          <p class='large-font'>Ruby Robot knows the difference between a number and a word.</p>
+          <p class='large-font'>Try using some of your own words, like your name.</p>
         </section>
       </article>
       
@@ -263,8 +261,8 @@
         <h3>
           Picking Up An Object
         </h3>
-        <p class='large-font'>Imagine Ruby Robot picks up the object <b>"CodingWithRubyRobot"</b>.</p>
-        <p class='large-font'>Ruby Robot scans the barcode, and finds out that <b>"CodingWithRubyRobot"</b> is a word.</p>
+        <p class='large-font'>Imagine Ruby Robot picks up the object <b>"GirlsCrackTheCode"</b>.</p>
+        <p class='large-font'>Ruby Robot scans the barcode, and finds out that <b>"GirlsCrackTheCode"</b> is a word.</p>
       </article>
       
       <article id='integer-string'>
@@ -298,12 +296,12 @@
           #classes-galore .build { margin-top: 40px; }
           #classes-galore .large-font { margin: 70px 0px; }
         </style>
-        <h3>Classes</h3>
+        <h3>Objects</h3>
         <div class='build'>
-          <p>Ruby Robot is very picky and has to classify everything before it knows what to do with it.<br>Ruby Robot knows that ...</p>
+          <p>Ruby Robot has to know what type of Object it is holding to know what to do with it.</p>
+          <p class='large-font'>Ruby Robot knows that ...</p>
           <p class='large-font'>The number <b>1</b> is an <b>Integer</b>.
           <p class='large-font'>The word <b>"coding"</b> is a <b>String</b>.
-          <p>Integers and Strings are classes in Ruby. That's another programming word!</p>
         </div>
       </article>
       
@@ -348,10 +346,10 @@
         </section>
       </article>
       
-      <article id='integer-fun'>
+      <article id='worksheet-fun'>
         <style>
-          #integer-fun .large-font { margin-top: 175px; }
-          #integer-fun b { color: #006363; }
+          #worksheet-fun .large-font { margin-top: 175px; }
+          #worksheet-fun b { color: #006363; }
         </style>
         <h3>
           More Fun With Integers
@@ -364,22 +362,18 @@
           Playing with Strings
         </h3>
         <section class='build'>
-          <pre>> "codingwithrubyrobot".capitalize</pre>
-          <pre>=> "Codingwithrubyrobot"</pre>
+          <pre>> "girlscrackthecode".capitalize</pre>
+          <pre>=> "Girlscrackthecode"</pre>
           
-          <pre>> "codingwithrubyrobot".upcase</pre>
-          <pre>=> "CODINGWITHRUBYROBOT"</pre>
+          <pre>> "girlscrackthecode".upcase</pre>
+          <pre>=> "GIRLSCRACKTHECODE"</pre>
           
-          <pre>> "codingwithrubyrobot".reverse</pre>
-          <pre>=> "toboryburhtiwgnidoc"</pre>
+          <pre>> "girlscrackthecode".reverse</pre>
+          <pre>=> "edocehtkcarcslrig"</pre>
         </section>
       </article>
       
-      <article id='string-fun'>
-        <style>
-          #string-fun .large-font { margin-top: 175px; }
-          #string-fun b { color: #006363; }
-        </style>
+      <article id='worksheet-fun'>
         <h3>
           More Fun With Strings
         </h3>
@@ -396,15 +390,8 @@
         <div class='build'>
           <p class='large-font'><b>next</b>, <b>odd?</b>, and <b>even?</b> are all methods that you can call on an Integer.</p>
           <p class='large-font'><b>capitalize</b>, <b>upcase</b>, and <b>reverse</b> are all methods that you can call on a String.</p>
-          <p class='large-font'>Methods are actions.</p>
+          <p class='large-font'>Methods are commands.</p>
         </div>
-      </article>
-      
-      <article id='class-methods'>
-        <style>
-          #class-methods .large-font { margin: 200px 0px; }
-        </style>
-        <p class='large-font'>Classes come packaged with methods.</p>
       </article>
       
       <article id='back-instructions'>
@@ -415,7 +402,7 @@
         <h3>
           Back to Ruby Robot's Instruction Book
         </h3>
-        <p class='large-font'>Each page in Ruby Robot's instruction book tell Ruby what it can do with a type of Object (a Class).</p>
+        <p class='large-font'>Each page in Ruby Robot's instruction book tells Ruby Robot what it can do with each type of Object.</p>
         <p class='large-font'>The <b>things it can do</b> are the <b>methods</b>, and they're found on each page of the book.</p>
       </article>
       
@@ -427,11 +414,11 @@
         <h3>
           I'm lazy! I don't want to do all of this typing!
         </h3>
-        <p class='large-font'>What if we could type in <b>"codingwithrubyrobot"</b> only once? We can!</p>
+        <p class='large-font'>What if we could type in <b>"girlscrackthecode"</b> only once? We can!</p>
         <section>
-          <pre>> crr = "codingwithrubyrobot"</pre>
-          <pre>=> "codingwithrubyrobot"</pre></section>
-        <p class='large-font'><b>crr</b> is called a variable.</p>
+          <pre>> gcc = "girlscrackthecode"</pre>
+          <pre>=> "girlscrackthecode"</pre></section>
+        <p class='large-font'><b>gcc</b> is called a variable. It's like a nickname for the Object.</p>
       </article>
       
       <article id='back-ruby-robot'>
@@ -442,30 +429,30 @@
         <h3>
           Back to Ruby Robot
         </h3>
-        <p class='large-font'>You gave Ruby Robot the string <b>"codingwithrubyrobot"</b>, and asked it to put a sticky note with <b>"crr"</b> on that string.</p>
-        <p class='large-font'>Now, when you ask for <b>"crr"</b>, Ruby Robot will know where to find your string, because it has labelled it.</p>
+        <p class='large-font'>You gave Ruby Robot the string <b>"girlscrackthecode"</b>, and asked it to put a sticky note with <b>"gcc"</b> on that string.</p>
+        <p class='large-font'>Now, when you ask for <b>"gcc"</b>, Ruby Robot will know where to find your string, because it has labelled it.</p>
       </article>
       
       <article>
         <h3>
           Variables Can (And Often Do!) Vary
         </h3>
-        <p>A variable is called just that because the object it can change.</p>
+        <p>A variable is called just that because it can change.</p>
         <section class='build'>
-          <pre>> crr = "learning to code with ruby robot"</pre><pre>=> "learning to code with ruby robot"</pre>
-          <div>crr <img src='images/arrow.png'> "learning to code with ruby robot"</div>
-          <p>Now let's ask for crr.</p>
-          <pre>> crr</pre><pre>=> "learning to code with ruby robot"</pre>
+          <pre>> gcc = "learning to code with ruby robot"</pre><pre>=> "learning to code with ruby robot"</pre>
+          <div>gcc <img src='images/arrow.png'> "learning to code with ruby robot"</div>
+          <p>Now let's ask for gcc.</p>
+          <pre>> gcc</pre><pre>=> "learning to code with ruby robot"</pre>
         </section>
       </article>
       
       <article>
         <p>Let's try some more</p>
         <section class='build'>
-          <pre>> crr = 99</pre><pre>=> 99</pre>
-          <div>crr <img src='images/arrow.png'> 99</div>
-          <p>Let's ask for crr once again.</p>
-          <pre>> crr</pre><pre>=> 99</pre>
+          <pre>> gcc = 99</pre><pre>=> 99</pre>
+          <div>gcc <img src='images/arrow.png'> 99</div>
+          <p>Let's ask for gcc once again.</p>
+          <pre>> gcc</pre><pre>=> 99</pre>
         </section>
       </article>
       
@@ -473,17 +460,24 @@
         <h3>The More the Merrier</h3>
         <p>Let's introduce another variable.</p>
         <section class='build'>
-          <pre>> copy_cat = crr</pre><pre>=> 99</pre>
-          <div>crr <img src='images/arrow.png'> 99 <img src='images/back-arrow.png'> copy_cat</div>
+          <pre>> copy_cat = gcc</pre><pre>=> 99</pre>
+          <div>gcc <img src='images/arrow.png'> 99 <img src='images/back-arrow.png'> copy_cat</div>
         </section>
       </article>
       
       <article>
         <h3>Let's ask for each variable</h3>
         <section class='build'>
-          <pre>> crr</pre><pre>=> 99</pre>
+          <pre>> gcc</pre><pre>=> 99</pre>
           <pre>> copy_cat</pre><pre>=> 99</pre>
         </section>
+      </article>
+      
+      <article id='worksheet-fun'>
+        <h3>
+          More Fun With Variables
+        </h3>
+        <p class='large-font'>Find your <b>Variable</b> sheet, and try playing with each of the instructions.</p>
       </article>
       
       <article id='variable-reset'>
@@ -491,9 +485,9 @@
           #variable-reset .large-font { margin: 100px 0; }
         </style>
         <h3>Resetting the variable</h3>
-        <p class='large-font'>Now set crr back to "codingwithrubyrobot"</p>
+        <p class='large-font'>Now set gcc back to "girlscrackthecode"</p>
         <section class='build'>
-          <pre>> crr = "codingwithrubyrobot"</pre><pre>=> "codingwithrubyrobot"</pre>
+          <pre>> gcc = "girlscrackthecode"</pre><pre>=> "girlscrackthecode"</pre>
         </section>
       </article>
       
@@ -501,16 +495,16 @@
         <h3>
           Playing With Our Variable
         </h3>
-        <p>You can use this variable like you would have used "codingwithrubyrobot" before.</p>
+        <p>You can use this variable like you would have used "girlscrackthecode" before.</p>
         <section>
-          <pre>> crr.capitalize</pre>
-          <pre>=> "Codingwithrubyrobot"</pre>
+          <pre>> gcc.capitalize</pre>
+          <pre>=> "Girlscrackthecode"</pre>
           
-          <pre>> crr.upcase</pre>
-          <pre>=> "CODINGWITHRUBYROBOT"</pre>
+          <pre>> gcc.upcase</pre>
+          <pre>=> "GIRLSCRACKTHECODE"</pre>
           
-          <pre>> crr.reverse</pre>
-          <pre>=> "toboryburhtiwgnidoc"</pre>
+          <pre>> gcc.reverse</pre>
+          <pre>=> "edocehtkcarcslrig"</pre>
         </section>
       </article>
             
