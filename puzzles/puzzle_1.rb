@@ -12,12 +12,6 @@ puts lisa + bart.reverse
 
 puts lisa.upcase
 
-puts lisa
-
-lisa = lisa.upcase
-
-puts lisa
-
 cartoon = lisa
 
 puts cartoon
@@ -25,9 +19,3 @@ puts cartoon
 cartoon = bart
 
 puts cartoon
-
-bart = lisa
-
-puts cartoon
-
-puts bart
