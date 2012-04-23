@@ -849,7 +849,7 @@
         </h3>
         <p>Try your new program with this tweet:</p>
         <p class='large-font'>
-          My alphabet starts with this letter called yuzz. It's the letter I use to spell yuzz-a-ma-tuzz.
+          You'll get mixed up, of course, as you already know. You'll get mixed up with many strange birds as you go. So be sure when you step. Step with care and great tact and remember that Life's a Great Balancing Act. Just never forget to be dexterous and deft. And never mix up your right foot with your left.
         </p>
       </article>
       
@@ -859,7 +859,7 @@
         </h3>
         <p>Try your new program with this tweet:</p>
         <p class='large-font'>
-          You'll get mixed up, of course, as you already know. You'll get mixed up with many strange birds as you go. So be sure when you step. Step with care and great tact and remember that Life's a Great Balancing Act. Just never forget to be dexterous and deft. And never mix up your right foot with your left.
+          My alphabet starts with this letter called yuzz. It's the letter I use to spell yuzz-a-ma-tuzz.
         </p>
       </article>
       
@@ -873,16 +873,62 @@
         </p>
       </article>
       
-      <!-- 
       <article id='conditional-instructions'>
         <h3>
           Your First Bug!
         </h3>
-        <p class='large-font'>We're not actually taking into account all possible tweet lengths.</p>
-        <p class='large-font'>Programming problems can be solved many different ways.</p>
-        <p class='large-font'>We'll look at three different solutions.</p>
+        <p class='large-font'>What if your tweet is <b>exactly 140 characters</b>?</p>
+        <p class='large-font'>Our program skips this possibility.</p>
       </article>
-
+      
+      <article id='greater-less-than'>
+        <style>
+          #greater-less-than .large-font { margin: 150px 0px; }
+          #greater-less-than .larger { font-size: 150px; margin-left: 300px; }
+        </style>
+        <h3>
+          Conditional Logic: Equality
+        </h3>
+        <p class='large-font'>The symbol for <b>equality</b> is:</p>
+        <p class='larger'><b>==</b></p>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic: Equality
+        </h3>
+        <section class='build'>
+          <pre>> tweet = "Oh the places you'll go! There is fun to be done!<br>The magical things you can do with that ball, will make you the<br>winning-est winner of all."</pre>
+          <pre>=> "Oh the places you'll go! There is fun to be done!<br>The magical things you can do with that ball, will make you the<br>winning-est winner of all."</pre>
+          <pre>> tweet.length</pre><pre>=> 140</pre>
+          <pre>> tweet.length == 140</pre><pre>=> true</pre>
+        </section>
+      </article>
+      
+      <article>
+        <h3>
+          Fix Your Bug!
+        </h3>
+        <p>Add this last if statement to the bottom of your file: (see assignments/twitter_5.rb if needed)</p>
+        <section>
+          <pre>if tweet.length == 140<br>  puts "Tweet your heart out!"<br>end</pre>
+        </section>
+        <p class='large-font'>
+          The == operator checks that the value of the objects on either side of it are equal. 
+        </p>
+      </article>
+      
+      <article id='dr-seuss'>
+        <h3>
+          Test Your Fix
+        </h3>
+        <p>Now try running your program with the tweet:</p>
+        <p class='large-font'>
+          Oh the places you'll go! There is fun to be done! The magical things you can do with that ball, will make you the winning-est winner of all.
+        </p>
+      </article>
+      
+      <!-- 
       <article id='conditional-logic'>
         <h3>
           First (Worst) Solution
