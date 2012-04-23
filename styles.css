@@ -170,37 +170,9 @@ body {
   display: none;
 }
 
-/*.slides > article.far-past {
-  display: block;
-  margin-left: -2400px;
+.slides > article b {
+  color: #006363;
 }
-
-.slides > article.past {
-  visibility: visible;
-  display: block;
-  margin-left: -1400px;
-}
-
-.slides > article.current {
-  visibility: visible;
-  display: block;
-  margin-left: -450px;
-  -webkit-transform: scale(1.0);
-  -moz-transform: scale(1.0);
-  -o-transform: scale(1.0);
-  opacity: 1.0;
-}
-
-.slides > article.future {
-  visibility: visible;
-  display: block;
-  margin-left: 500px;
-}
-
-.slides > article.far-future {
-  display: block;
-  margin-left: 1500px;
-}*/
 
 .slides > article.far-past {
   display: block;
