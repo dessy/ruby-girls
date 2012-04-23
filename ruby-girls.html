@@ -738,58 +738,57 @@
           Conditional Logic
         </h3>
         <p>We want our program to ...</p>
-        <p class='large-font'>if the tweet is greater than 140 characters, tell the user that they cannot send their tweet</p>
-        <p class='large-font'>if the tweet is less than or equal to 140 characters, tell the user that they can send their tweet</p>
+        <p class='large-font'><b>if</b> the tweet is <b>greater than 140 characters</b>, tell the user that they <b>cannot send their tweet</b></p>
+        <p class='large-font'><b>if</b> the tweet is <b>less than 140 characters</b>, tell the user that they can <b>send their tweet</b></p>
       </article>
       
-      <article id='greater-than'>
+      <article id='greater-less-than'>
         <style>
-          #greater-than .large-font { margin: 100px 0px; }
+          #greater-less-than .large-font { margin: 150px 0px; }
+          #greater-less-than .larger { font-size: 150px; margin-left: 300px; }
         </style>
         <h3>
           Conditional Logic: Greater Than
         </h3>
-        <p class='large-font'>The math symbol for <b>greater than</b> is <b>></b></p>
+        <p class='large-font'>The math symbol for <b>greater than</b> is:</p>
+        <p class='larger'><b>></b></p>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic: Greater Than
+        </h3>
         <p>Try the code below in IRB:</p>
         <section class='build'>
-          <pre>> 200 > 140</pre><pre>=> true</pre>
+          <pre>> tweet = "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
+          <pre>=> "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
+          <pre>> tweet.length > 140</pre><pre>=> false</pre>
+          <pre>> tweet.length > 10</pre><pre>=> true</pre>
         </section>
       </article>
       
-      <article>
-        <h3>
-          Conditional Logic: Greater Than
-        </h3>
-        <p>Now try:</p>
-        <section class='build'>
-          <pre>> number_of_characters = 200</pre><pre>=> 200</pre>
-          <pre>> number_of_characters > 140</pre><pre>=> true</pre>
-        </section>
-      </article>
-      
-      <article>
-        <h3>
-          Conditional Logic: Greater Than
-        </h3>
-        <p>Now try:</p>
-        <section class='build'>
-          <pre>> number_of_characters = 80</pre><pre>=> 80</pre>
-          <pre>> number_of_characters > 140</pre><pre>=> false</pre>
-        </section>
-      </article>
-      
-      <article id='less-than'>
+      <article id='greater-less-than'>
         <style>
-          #less-than .large-font { margin: 50px 0px; }
+          #greater-less-than .large-font { margin: 150px 0px; }
+          #greater-less-than .larger { font-size: 150px; margin-left: 300px; }
         </style>
         <h3>
           Conditional Logic: Less Than
         </h3>
-        <p class='large-font'>The math symbol for <b>less than</b> is <b><</b></p>
-        <p>Try the code below in irb</p>
+        <p class='large-font'>The math symbol for <b>less than</b> is:</p>
+        <p class='larger'><b><</b></p>
+      </article>
+      
+      <article>
+        <h3>
+          Conditional Logic: Less Than
+        </h3>
+        <p>Try the code below in IRB:</p>
         <section class='build'>
-          <pre>> llc = "ladieslearningcode"</pre><pre>=> "ladieslearningcode"</pre>
-          <pre>> llc.length < 140</pre><pre>=> true</pre>
+          <pre>> tweet = "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
+          <pre>=> "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
+          <pre>> tweet.length < 140</pre><pre>=> true</pre>
+          <pre>> tweet.length < 10</pre><pre>=> false</pre>
         </section>
       </article>
       
