@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Ladies Learning Ruby</title>
+    <title>Girls Crack The Code</title>
     <meta charset='utf-8'>
     <script src='default.js'></script>
   </head>
@@ -654,31 +654,41 @@
         </section>
       </article>
       
-      <article>
+      <article id='input-fun'>
+        <style>
+          #input-fun .large-font { margin: 70px 0; }
+          #input-fun b { color: #006363; }
+        </style>
         <h3>
-          Asking for Input
+          Fun With Inputs
         </h3>
-        <p>Now try this:</p>
-        <section class='build'>
-          <pre>> tweet = gets.chomp</pre>
-          <pre class='all-string'>I'm learning Ruby with Ruby Robot</pre>
-          <pre>=> "I'm learning Ruby with Ruby Robot"</pre>
-          <pre>> puts tweet</pre>
-          <pre class='all-string'>I'm learning Ruby with Ruby Robot<br>=> nil</pre>
-        </section>
+        <p class='large-font'>Let's try asking for input a few more times.</p>
+        <p class='large-font'>We'll run the program <b>assignments/input_1.rb</b> together.</p>
+        <p class='large-font'>Do you remember how to run a program?</p>
+        <pre>ruby assignments/input_1.rb</pre>
       </article>
       
-      <article id='nil-nothing'>
+      <article id='input-madlib'>
         <style>
-          #nil-nothing p { margin: 80px 0px; }
+          #input-madlib .large-font { margin: 150px 0; }
+          #input-madlib b { color: #006363; }
         </style>
-        <h3>What's nil? It's nothing, don't worry.</h3>
-        <p>You asked Ruby to give you your tweet, and Ruby did just that.</p>
-        <p>
-          Remember that in IRB, Ruby always responds to your message.
-          This time, it gave the output, and had nothing else to say, so it returned nil. 
-        </p>
-        <p>Nothing to worry about.</p>
+        <h3>
+          Inputs for Mad Libs
+        </h3>
+        <p class='large-font'>Now let's run <b>assignments/input_2.rb</b> and <b>assignments/input_3.rb</b> together.</p>
+        <p>Mad Libs examples are from http://www.itsamadlibsworld.com/</p>
+      </article>
+      
+      <article id='create-madlib'>
+        <style>
+          #create-madlib .large-font { margin: 150px 0; }
+          #create-madlib b { color: #006363; }
+        </style>
+        <h3>
+          Get Creative With Your Own Mad Lib!
+        </h3>
+        <p class='large-font'>Make a program called <b>mad_lib.rb</b> and create your very own Mad Lib.</p>
       </article>
       
       <article id='ask-for-tweet'>
@@ -699,7 +709,7 @@
         </div>
       </article>
       
-      <!-- <article id='conditional-twitter-1'>
+      <article id='conditional-twitter-1'>
         <style>
           #conditional-twitter-1 .large-font { margin-top: 100px; }
         </style>
@@ -707,8 +717,8 @@
           Giving Output Based on Input
         </h3>
         <p>Twitter...</p>
-        <p class='large-font'>Lets you send your tweet if it is 140 characters or less</p>
-        <p class='large-font'>Tells you that your tweet is too long to send otherwise.</p>
+        <p class='large-font'>Lets you send your tweet if it is 140 characters or less.</p>
+        <p class='large-font'>Tells you that your tweet is too long if it is greater than 140 characters.</p>
       </article>
       
       <article id='conditional-twitter-2'>
@@ -717,7 +727,7 @@
         </style>
         <h3>Giving Output Based on Input</h3>
         <p class='large-font'>
-          So far we know how to determine the length of the user's tweet. 
+          So far we know how to length the length of the user's tweet.
         </p>
         <p class='large-font'>
           We don't know how to tell them 
@@ -838,7 +848,8 @@
           What's the problem here? What do you notice happened when using the tweets in tweets.txt?
         </p>
       </article>
-
+      
+      <!-- 
       <article id='conditional-instructions'>
         <h3>
           Your First Bug!
