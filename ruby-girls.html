@@ -577,24 +577,22 @@
         <p class='large-font'>A program has to be told when to output something</p>
         <p>Modify your program:</p>
         <section>
-          <pre>tweet = "I'm writing my first program at the @llcodedotcom<br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
+          <pre>tweet = "I'm writing my first program with Ruby Robot at the<br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
         </section>
       </article>
       
-      <!-- just words, highlight in a different colour before -->
       <article id='recap-one'>
         <style>
-          #recap-one .large-font { margin: 50px 0px; text-align: center; }
+          #recap-one .large-font { margin: 75px 0px; text-align: center; font-size: 80px; }
         </style>
         <h3>
           Recap Slide
         </h3>
         <div class='build'>
-          <p class='large-font'>Integer</p>
-          <p class='large-font'>String</p>
-          <p class='large-font'>Class</p>
-          <p class='large-font'>Object</p>
-          <p class='large-font'>Variable</p>
+          <p class='large-font' style='color:#ff9700'>Integer</p>
+          <p class='large-font' style='color:#4671d5'>String</p>
+          <p class='large-font' style='color:#26972D'>Object</p>
+          <p class='large-font' style='color:#68237f'>Variable</p>
         </div>
       </article>
       
@@ -693,18 +691,19 @@
       
       <article id='ask-for-tweet'>
         <style>
-          #ask-for-tweet .build { margin-top: 60px; }
+          #ask-for-tweet .build { margin-top: 40px; }
+          #ask-for-tweet b { color: #006363; }
         </style>
         <h3>
           Back to your Twitter Program
         </h3>
         <p>Working with your buddy, change your Twitter program like this:</p>
         <div class='build'>
-          <p>1. Ask (politely!) for a tweet from the user.</p>
-          <p>2. Save it with a sticky note with "tweet" on it, without the \n.</p>
-          <p>3. Output the tweet the user gave.</p>
-          <p>4. Output the number of characters in the tweet.</p>
-          <p>5. Output how many <b>more</b> characters the user can add until they hit 140 characters.</p>
+          <p>1. Ask (politely!) for a tweet from the user. - <b>puts</b></p>
+          <p>2. Save the user input with a sticky note with "<b>tweet</b>" on it, without \n. - <b>gets</b>, <b>chomp</b></p>
+          <p>3. Output the tweet the user gave. - <b>puts</b></p>
+          <p>4. Output the number of characters in the tweet. - <b>puts</b>, <b>chomp</b></p>
+          <p>5. Output how many <b>more</b> characters the user can add until they hit 140 characters. - <b>puts</b></p>
           <p>(answers in assignments/twitter_3.rb)</p>
         </div>
       </article>
