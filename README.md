@@ -10,10 +10,24 @@ Feedback is more than welcome, and in fact very much appreciated!
 
 # Instructions
 
-- slides
-- assignments
-- worksheets
-- extras
+The repo contains 3 major components: slides, assignments, and worksheets. The slides (ruby-girls.html) are HTML5 slides, 
+and are used to introduce new concepts and set the general direction for the workshop. The slides introduce a concept, and then 
+direct the students to an assignment or worksheet. The assignments are used for several purposes.
+
+The set of files named twitter_x.rb are used throughout the workshop to build up a simple Twitter program. The files are there 
+in case the students get stuck or fall behind during a part of the process, and need to pick up from a certain point. The slides 
+note which twitter_x.rb file should be completed during each step.
+
+The input_x.rb files illustrate practical uses for getting input from a user, and outputting text for the user to see. They're 
+meant to demonstrate the concept. The students are encouraged to use them as a reference to create their own program.
+
+The puzzle.rb and puzzle_answer.txt files are a puzzle for the students to solve and the corresponding answer, respectively. 
+
+The logic_1.rb file is used to demonstrate a practical use for logic. Following the demonstration, the students are asked to create 
+their own program. The file logic_2.rb is used to show how the program should work, and is a reference for the students in case 
+they're unable to write the program on their own.
+
+The worksheets are meant to be printed out. Throughout the workshop, the slides direct the students to work through each of the worksheets.
 
 # Thanks
 
