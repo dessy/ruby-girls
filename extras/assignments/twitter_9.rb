@@ -4,8 +4,6 @@ tweet = gets.chomp
 
 if tweet.length > 140
   puts "Your tweet is too long!"
-elsif tweet.length < 140
-  puts "Tweet your heart out!"
-elsif tweet.length == 140
+else
   puts "Tweet your heart out!"
 end
