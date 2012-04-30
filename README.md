@@ -8,6 +8,13 @@ and I'll be happy to share my experiences with you.
 
 Feedback is more than welcome, and in fact very much appreciated!
 
+# Instructions
+
+- slides
+- assignments
+- worksheets
+- extras
+
 # Thanks
 
 A big thank you to [Ladies Learning Code](http://ladieslearningcode.com/), for giving me a great reason to 
