@@ -18,7 +18,7 @@ if birthday.downcase == "april"
 end
 
 if birthday.downcase == "may"
-  puts "May, the month that Girls Crack the Code is held this year!"
+  puts "May, and the flowers are blooming!"
 end
 
 if birthday.downcase == "june"
