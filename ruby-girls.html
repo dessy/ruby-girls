@@ -44,7 +44,7 @@
           What is Ruby?
         </h3>
         <p />
-        <div class="build">
+        <div>
           <p class='large-font'>Ruby is a programming language.</p>
           <p class='large-font'>Wait ... what's a programming language?</p>
           <p class='large-font'>Let's backtrack a bit.</p>
@@ -143,7 +143,7 @@
         <table>
           <tr>
             <td>
-              <div class="build">
+              <div>
                 <p class='large-font'>Let's try teaching Ruby Robot to make a peanut butter sandwich.</p>
               </div>
             </td>
@@ -195,11 +195,10 @@
         <h3>
           Time to see Ruby Robot in action!
         </h3>
-        <section class='build'>
+        <section>
           <p class='large-font'>You can speak to your computer through Terminal.</p>
           <p class='large-font'>From Terminal, we'll ask our computer for IRB.</p>
           <p class='large-font'>IRB is like text messaging with Ruby Robot.</p>
-          <p class='large-font'>You'll ask Ruby Robot to do something, and it will respond.</p>
         </section>
       </article>
       
@@ -207,20 +206,24 @@
         <style>
           #ask-ruby .large-font { margin-top: 100px; }
         </style>
-        <section class='build'>
+        <section>
           <pre>irb</pre>
-          <pre>ruby-1.8.7 :001 > </pre>
+          <pre>irb(main):001:0> </pre>
           <p class='large-font'>Let's ask Ruby Robot to do something.</p>
         </section>
       </article>
       
       <article>
-        <section class='build'>
+        <section>
           <pre>> 1 + 1</pre>
           <pre>=> 2</pre>
-          <pre>> 462 * 86</pre>
-          <pre>=> 39732</pre>
-          <p class='large-font'>Ruby can do math very quickly.</p>
+        </section>
+        <section class='build'>
+          <div>
+            <pre>> 462 * 86</pre>
+            <pre>=> 39732</pre>
+            <p class='large-font'>Ruby can do math very quickly.</p>
+          </div>
         </section>
       </article>
       
@@ -228,12 +231,13 @@
         <style>
           #ruby-knows .large-font { margin-top: 60px; }
         </style>
+        <pre>> "Girls" + "Learning" + "Code"</pre>
         <section class='build'>
-          <pre>> 1 + 2 + 3<br>=> 6</pre>
-          <pre>> "Girls" + "Learning" + "Code"</pre>
-          <pre>=> "GirlsLearningCode"</pre>
-          <p class='large-font'>Ruby Robot knows the difference between a number and a word.</p>
-          <p class='large-font'>Try using some of your own words, like your name.</p>
+          <div>
+            <pre>=> "GirlsLearningCode"</pre>
+            <p class='large-font'>Ruby Robot knows the difference between a number and a word.</p>
+            <p class='large-font'>Try using some of your own words, like your name.</p>
+          </div>
         </section>
       </article>
       
@@ -255,6 +259,10 @@
         <p class='large-font'>Ruby Robot scans the barcode to find out what type of object it is.</p>
       </article>
       
+      <article id='ruby-robot-world-1'>
+        <img src='assets/images/ruby-robot-world-1.png'>
+      </article>
+
       <article id='pick-up-object'>
         <style>
           #pick-up-object p { margin: 75px 0px; }
@@ -278,6 +286,10 @@
         <p class='ruby-class'>Letters, words, and sentences are called <b>STRINGS</b>. A String always has quotes around it.</p>
       </article>
       
+      <article>
+        <img src='assets/images/ruby-robot-world-2.png'>
+      </article>
+
       <article id='objects-objects'>
         <style>
           #objects-objects .large-font { margin: 150px 0px; }
@@ -286,7 +298,7 @@
           Objects, Objects, Everywhere!
         </h3>
         <p>You've already met Objects. That's a programming word!</p>
-        <div class='build'>
+        <div>
           <p class='large-font'>How does Ruby Robot know what to do with an Object?</p>
         </div>
       </article>
@@ -297,11 +309,10 @@
           #classes-galore .large-font { margin: 70px 0px; }
         </style>
         <h3>Objects</h3>
-        <div class='build'>
-          <p>Ruby Robot has to know what type of Object it is holding to know what to do with it.</p>
+        <div>
           <p class='large-font'>Ruby Robot knows that ...</p>
           <p class='large-font'>The number <b>1</b> is an <b>Integer</b>.
-          <p class='large-font'>The word <b>"coding"</b> is a <b>String</b>.
+          <p class='large-font'>The word <b>"code"</b> is a <b>String</b>.
         </div>
       </article>
       
@@ -329,6 +340,10 @@
         <p>Sees that when you ask for an <b>INTEGER + INTEGER</b>, you want it to add the two together.</p>
       </article>
       
+      <article>
+        <img src='assets/images/ruby-robot-world-3.png'>
+      </article>
+
       <article>
         <h3>
           Playing with Integers
@@ -385,7 +400,7 @@
         <h3>
           Methods
         </h3>
-        <div class='build'>
+        <div>
           <p class='large-font'><b>next</b>, <b>odd?</b>, and <b>even?</b> are all methods that you can call on an Integer.</p>
           <p class='large-font'><b>capitalize</b>, <b>upcase</b>, and <b>reverse</b> are all methods that you can call on a String.</p>
           <p class='large-font'>Methods are commands.</p>
@@ -433,28 +448,32 @@
           Variables Can (And Often Do!) Vary
         </h3>
         <p>A variable is called just that because it can change.</p>
-        <section class='build'>
+        <section>
           <pre>> gcc = "learning to code with ruby robot"</pre><pre>=> "learning to code with ruby robot"</pre>
           <div>gcc <img src='assets/images/arrow.png'> "learning to code with ruby robot"</div>
           <p>Now let's ask for gcc.</p>
-          <pre>> gcc</pre><pre>=> "learning to code with ruby robot"</pre>
+          <section class='build'>
+            <div><pre>> gcc</pre><pre>=> "learning to code with ruby robot"</pre></div>
+          </div>
         </section>
       </article>
       
       <article>
         <p>Let's try some more</p>
-        <section class='build'>
+        <section>
           <pre>> gcc = 99</pre><pre>=> 99</pre>
           <div>gcc <img src='assets/images/arrow.png'> 99</div>
           <p>Let's ask for gcc once again.</p>
-          <pre>> gcc</pre><pre>=> 99</pre>
+          <section class='build'>
+            <div><pre>> gcc</pre><pre>=> 99</pre></div>
+          </section>
         </section>
       </article>
       
       <article>
         <h3>The More the Merrier</h3>
         <p>Let's introduce another variable.</p>
-        <section class='build'>
+        <section>
           <pre>> copy_cat = gcc</pre><pre>=> 99</pre>
           <div>gcc <img src='assets/images/arrow.png'> 99 <img src='assets/images/back-arrow.png'> copy_cat</div>
         </section>
@@ -462,9 +481,13 @@
       
       <article>
         <h3>Let's ask for each variable</h3>
-        <section class='build'>
+        <section>
           <pre>> gcc</pre><pre>=> 99</pre>
-          <pre>> copy_cat</pre><pre>=> 99</pre>
+          <section class='build'>
+            <div>
+              <pre>> copy_cat</pre><pre>=> 99</pre>
+            </div>
+          </section>
         </section>
       </article>
       
@@ -481,7 +504,7 @@
         </style>
         <h3>Resetting the variable</h3>
         <p class='large-font'>Now set gcc back to "girlslearningcode"</p>
-        <section class='build'>
+        <section>
           <pre>> gcc = "girlslearningcode"</pre><pre>=> "girlslearningcode"</pre>
         </section>
       </article>
@@ -537,24 +560,28 @@
         <h3>
           Let's Try One More
         </h3>
+        <pre>> gcc.length</pre>
         <div class='build'>
-          <pre>> gcc.length</pre>
-          <pre>=> 17</pre>
-          <p class='large-font'>
-            You're probably starting to get a sense of how Twitter knows 
-            how many characters you've typed in.
-          </p>
+          <div>
+            <pre>=> 17</pre>
+            <p class='large-font'>
+              You're probably starting to get a sense of how Twitter knows 
+              how many characters you've typed in.
+            </p>
+          </div>
         </div>
       </article>
       
       <article>
         <h3>Doing like Twitter does.</h3>
+        <pre>> tweet = "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
+        <pre>=> "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
         <section class='build'>
-          <pre>> tweet = "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
-          <pre>=> "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"</pre>
           <pre>> tweet.length</pre>
-          <pre>=> 75</pre>
-          <p class='large-font'>Try writing some tweets of your own, and check if they're too long!</p>
+          <div>
+            <pre>=> 75</pre>
+            <p class='large-font'>Try writing some tweets of your own, and check if they're too long!</p>
+          </div>
         </section>
       </article>
       
@@ -566,13 +593,12 @@
           Open TextMate, add the same code, and save it as twitter.rb in your ruby-girls folder. (Or, use assignments/twitter_1.rb)
         </p>
         <section>
-          <pre>tweet = "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"<br>tweet.length</pre>
+          <pre>tweet = "I'm writing my first program with Ruby Robot at the <br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
         </section>
         <p>To run your program, type <b>quit</b> to exit from IRB, and then type:</p>
         <section>
           <pre>ruby twitter.rb</pre>
         </section>
-        <div class='build'><p>Wait, what? Why didn't it show me the length of my string?</p></div>
       </article>
       
       <article id='ruby-output'>
@@ -583,11 +609,8 @@
           Outputting Text to the Screen
         </h3>
         <p class='large-font'>IRB is like back-and-forth text messaging.</p>
-        <p class='large-font'>A program has to be told when to output something.</p>
-        <p>Change your program: (Or, use assignments/twitter_2.rb)</p>
-        <section>
-          <pre>tweet = "I'm writing my first program with Ruby Robot at the<br>Intro to Ruby workshop!"<br>puts tweet.length</pre>
-        </section>
+        <p class='large-font'>A program has to be told when to output something with <b>puts</b>.</p>
+        <p class='large-font'>Let's try a few more examples together.</p>
       </article>
       
       <article id='puzzle-one'>
