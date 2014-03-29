@@ -1,2 +1,2 @@
-tweet = "I'm writing my first program with Ruby Robot at the Intro to Ruby workshop!"
-tweet.length
+tweet = "I'm writing my first program at the @llcodedotcom Intro to Ruby workshop!"
+puts tweet.length

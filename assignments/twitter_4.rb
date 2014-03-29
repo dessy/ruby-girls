@@ -9,3 +9,7 @@ end
 if tweet.length < 140
   puts "Tweet your heart out!"
 end
+
+if tweet.length == 140
+  puts "Tweet your heart out!"
+end

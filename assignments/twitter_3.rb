@@ -2,11 +2,10 @@ puts "Gimme your tweet!"
 
 tweet = gets.chomp
 
-puts "This is your tweet:"
-puts tweet
+if tweet.length > 140
+  puts "Your tweet is too long!"
+end
 
-puts "The length of your tweet is:"
-puts tweet.length
-
-puts "The number of characters you have until you hit 140 is:"
-puts 140 - tweet.length
+if tweet.length < 140
+  puts "Tweet your heart out!"
+end
