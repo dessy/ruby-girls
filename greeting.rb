@@ -1,4 +1,4 @@
-puts "Hi there, my name is Ruby Robot. What's your name?"
+puts "Hi, my name is Ruby Robot. What's your name?"
 
 name = gets.chomp
 
